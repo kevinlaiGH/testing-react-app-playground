@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import PeopleCard from "./components/PeopleCard";
+import PeopleModal from "./components/PeopleModal";
 class MainArea extends Component {
   constructor() {
     super();
@@ -40,10 +41,10 @@ class MainArea extends Component {
     });
   }
   render() {
-    let peopleCards = this.state.people.map(person => {
+    let peopleModals = this.state.people.map(person => {
       return (
         <Col sm="3">
-          <PeopleCard
+          <PeopleModal
             key={person.id}
             removePerson={this.removePerson.bind(this)}
             person={person}
@@ -53,7 +54,7 @@ class MainArea extends Component {
     });
     return (
       <Container fluid>
-        <Row>{peopleCards}</Row>
+        <Row>{peopleModals}</Row>
       </Container>
     );
   }
