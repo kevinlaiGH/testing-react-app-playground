@@ -15,6 +15,9 @@ class PeopleCard extends Component {
   }
 
   render() {
+    let { id, name, company, description } = this.props.person;
+    let { removePerson } = this.props;
+
     return (
       <div>
         <Card>
@@ -28,7 +31,7 @@ class PeopleCard extends Component {
             <CardTitle>{this.props.person.name}</CardTitle>
             <CardSubtitle>{this.props.person.sportleader}</CardSubtitle>
             <CardText>{this.props.person.description}</CardText>
-            <Button>Button</Button>
+            <Button onClick={() => this.props.removePerson(id)}>Delete</Button>
           </CardBody>
         </Card>
       </div>
