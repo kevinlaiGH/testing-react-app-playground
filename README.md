@@ -7,8 +7,6 @@ At Decathlon, we all share a common passion for Sport.
 We love what we do, and who we do it with.
 Discover who we are!
 
-button: we are hiring!
-
 PROBLEMS ENCOUNTERED:
 Figuring how to loop images through an array
 
@@ -22,7 +20,7 @@ then we want to render the removePerson function inside the PeopleModal.js
 Currently, PeopleCard can display name and sportleader. SO can PeopleModal, because we are just passing props from parent to children.
 We have { id, name, sportleader, description } in our constructor of MainArea.js (parent) when we set our initial state
 
-so to pass the props from MainAreas.js to other components (children), ebfore rendering function, we need to let { id, name, sportleader, description } = this.props.person;
+so to pass the props from MainAreas.js to other components (children), before rendering function, we need to let { id, name, sportleader, description } = this.props.person;
 we can then start using the properties inherit frmo the parent. Example:
 {this.props.person.id}
 {this.props.person.name}
