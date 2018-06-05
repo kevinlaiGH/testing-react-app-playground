@@ -1,6 +1,8 @@
 import React from "react";
 import {
   CardImg,
+  CardTitle,
+  CardSubtitle,
   Button,
   Modal,
   ModalHeader,
@@ -25,7 +27,7 @@ class PeopleModal extends React.Component {
   }
 
   render() {
-    let { id, name, company, description } = this.props.person;
+    let { id, name, sportleader, description } = this.props.person;
     let { removePerson } = this.props;
     return (
       <div>
@@ -33,10 +35,13 @@ class PeopleModal extends React.Component {
           <CardImg
             top
             width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=300&h=300"
             alt="Card image cap"
           />
+          <CardTitle>{this.props.person.name}</CardTitle>
+          <CardSubtitle>{this.props.person.sportleader}</CardSubtitle>
         </Button>
+
         <Modal
           isOpen={this.state.modal}
           toggle={this.toggle}
@@ -44,7 +49,7 @@ class PeopleModal extends React.Component {
         >
           <ModalHeader toggle={this.toggle}>hello</ModalHeader>
 
-          <ModalBody>what what</ModalBody>
+          <ModalBody>Sayings!</ModalBody>
           <ModalFooter>
             <Button color="primary" onClick={this.toggle}>
               Do Something

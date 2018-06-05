@@ -22,13 +22,13 @@ class MainArea extends Component {
         {
           id: 3,
           name: "Tom Chow",
-          company: "Some company, Inc",
+          sportleader: "Motivation Leader",
           description: "met at a StartCon Conf"
         },
         {
           id: 4,
           name: "John Chow",
-          company: "Some company, Inc",
+          sportleader: "Dancing Leader",
           description: "met at a StartCon Conf"
         }
       ]

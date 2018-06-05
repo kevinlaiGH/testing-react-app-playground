@@ -15,7 +15,7 @@ class PeopleCard extends Component {
   }
 
   render() {
-    let { id, name, company, description } = this.props.person;
+    let { id, name, sportleader, description } = this.props.person;
     let { removePerson } = this.props;
 
     return (
