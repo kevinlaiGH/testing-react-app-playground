@@ -26,7 +26,7 @@ export default class TopNav extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="success" light expand="md">
           <NavbarBrand href="https://www.decathlon.com.au">
             Decathlon
           </NavbarBrand>

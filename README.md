@@ -27,6 +27,15 @@ we can then start using the properties inherit frmo the parent. Example:
 {this.props.person.sportleader}
 {this.props.person.description}
 
+so now my next step is.....
+
+1.  put images link inside MainArea.js
+    similar to { id, name, sportleader, description } , I will pass them as props from parent to child component
+
+2.  maybe refactor the code and then iterate the array of images ???
+
+3.  then put those image links/ files inside database (preferably MongoDB/firebase) because if we load all the images in the local folde, it will worsen the web performance.
+
 Reference:
 https://www.youtube.com/watch?v=8q2zf9pFiQ4&t=7s
 https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/
